@@ -50,7 +50,7 @@ export default function About() {
           <div className="space-y-8">
             <div className="space-y-6">
               <p className="text-xl text-gray-600 leading-relaxed font-light">
-                I'm a passionate full-stack developer with over 3 years of
+                Im a passionate full-stack developer with over 3 years of
                 experience creating innovative web applications and digital
                 solutions. My journey in technology began with a fascination for
                 how code can transform ideas into reality.
