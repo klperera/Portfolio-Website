@@ -62,7 +62,7 @@ export default function About() {
                 that are both beautiful and functional.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies,
+                When Im not coding, you can find me exploring new technologies,
                 contributing to open-source projects, or mentoring aspiring
                 developers in the community.
               </p>
