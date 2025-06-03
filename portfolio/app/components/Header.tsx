@@ -132,7 +132,7 @@ const Header = () => {
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className={`relative flex flex-col items-center px-4 py-3 rounded-2xl text-xs font-medium tracking-wide transition-all duration-300 group ${
+                  className={`relative flex flex-col items-center px-4 py-3 rounded-2xl text-xs font-medium tracking-wide transition-all duration-300 group cursor-pointer ${
                     activeSection === item.id
                       ? isScrolled
                         ? "text-white bg-white/20"
@@ -186,7 +186,7 @@ const Header = () => {
               transition={{ duration: 0.5 }}
             >
               <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
-                <span className="text-white text-sm font-bold">AJ</span>
+                <span className="text-white text-sm font-bold">KP</span>
               </div>
               <span
                 className={`text-sm font-medium ${
