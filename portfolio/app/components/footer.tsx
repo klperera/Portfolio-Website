@@ -16,6 +16,9 @@ export default function Footer() {
               Full-Stack Developer passionate about creating exceptional digital
               experiences that make a meaningful impact.
             </p>
+            <h4 className="text-xl font-semibold text-gray-200 mb-6">
+              Follow Me
+            </h4>
             <div className="flex space-x-6">
               {[
                 {
