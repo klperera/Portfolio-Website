@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative top-20 min-h-screen flex items-center justify-center overflow-hidden bg-white"
+      className="relative top-40 min-h-screen flex items-center justify-center overflow-hidden bg-white"
     >
       {/* Strategically Cropped Images */}
       <div className="absolute inset-0 flex items-center justify-center">
@@ -229,7 +229,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 2.5 }}
-          className="absolute bottom-22 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-50 -right-20 transform -translate-x-1/2"
         >
           <motion.button
             onClick={scrollToAbout}

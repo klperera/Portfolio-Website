@@ -35,10 +35,10 @@ const Header = () => {
       // Update active section based on scroll position
       const sections = [
         "hero",
-        "about",
         "projects",
         "skills",
         "education",
+        "about",
         "contact",
       ];
       const currentSection = sections.find((section) => {
@@ -67,10 +67,10 @@ const Header = () => {
 
   const navItems = [
     { id: "hero", label: "Home", icon: Home },
-    { id: "about", label: "About", icon: User },
     { id: "projects", label: "Projects", icon: Briefcase },
     { id: "skills", label: "Skills", icon: Code },
     { id: "education", label: "Education", icon: GraduationCap },
+    { id: "about", label: "About", icon: User },
     { id: "contact", label: "Contact", icon: Mail },
   ];
 

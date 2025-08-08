@@ -1,7 +1,7 @@
 "use client";
 
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
-import { title } from "process";
+import Image from "next/image";
 import { useState } from "react";
 
 const projects = [
@@ -140,10 +140,12 @@ export default function Projects() {
               className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-gray-200"
             >
               <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden">
-                <img
+                <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  width={600}
+                  height={400}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
