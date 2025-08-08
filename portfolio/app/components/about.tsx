@@ -1,6 +1,7 @@
 "use client";
 
 import { Code, Palette, Zap, Users } from "lucide-react";
+import Image from "next/image";
 
 const highlights = [
   {
@@ -96,7 +97,12 @@ export default function About() {
               {/* Main Image Container */}
               <div className="aspect-[4/5] bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 rounded-3xl overflow-hidden shadow-2xl">
                 <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                  <img src="/profile_picture.jpg" alt="profile picture" />
+                  <Image
+                    src="/profile_picture.jpg"
+                    alt="profile picture"
+                    width={600}
+                    height={600}
+                  />
                 </div>
               </div>
 
