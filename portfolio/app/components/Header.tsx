@@ -35,10 +35,10 @@ const Header = () => {
       // Update active section based on scroll position
       const sections = [
         "hero",
+        "about",
         "projects",
         "skills",
         "education",
-        "about",
         "contact",
       ];
       const currentSection = sections.find((section) => {
