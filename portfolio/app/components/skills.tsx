@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import LogoLoop from "./LogoLoop/LogoLoop";
 
 const skillCategories = [
   {
@@ -24,6 +25,7 @@ const skillCategories = [
       { name: "Spring-Boot", color: "from-gray-600 to-gray-800" },
       { name: "Django", color: "from-blue-600 to-cyan-600" },
       { name: "ASP.NET", color: "from-red-500 to-pink-600" },
+      { name: "Node.js", color: "from-green-400 to-green-600" },
       { name: "PostgreSQL", color: "from-blue-600 to-indigo-700" },
       { name: "MongoDB", color: "from-green-500 to-green-700" },
       { name: "WebSockets", color: "from-pink-500 to-purple-600" },
@@ -45,10 +47,7 @@ export default function Skills() {
   const [activeCategory, setActiveCategory] = useState(0);
 
   return (
-    <section
-      id="skills"
-      className="py-32 bg-gradient-to-b from-gray-50 to-white"
-    >
+    <section id="skills" className="py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-sm font-medium text-gray-500 tracking-widest uppercase mb-4 block">
@@ -161,6 +160,9 @@ export default function Skills() {
               </span>
             ))}
           </div>
+        </div>
+        <div className="mt-22">
+          <LogoLoop />
         </div>
       </div>
 
