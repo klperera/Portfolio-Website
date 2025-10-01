@@ -10,9 +10,6 @@ import {
   Send,
   CheckCircle,
   AlertCircle,
-  Linkedin,
-  Github,
-  Twitter,
 } from "lucide-react";
 
 export default function Contact() {
@@ -71,6 +68,7 @@ export default function Contact() {
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       setSubmitStatus("error");
+      console.error("Form submission error:", error);
     } finally {
       setIsSubmitting(false);
       setTimeout(() => setSubmitStatus("idle"), 5000);
@@ -88,7 +86,7 @@ export default function Contact() {
             Get In Touch
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extralight text-gray-900 mb-6 tracking-tight">
-            Let's Create
+            Let&apos;s Create
             <br />
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent font-light">
               Something Amazing
@@ -96,8 +94,8 @@ export default function Contact() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
-            Ready to bring your ideas to life? Let's discuss your next project
-            and explore how we can work together
+            Ready to bring your ideas to life? Let&apos;s discuss your next
+            project and explore how we can work together
           </p>
         </div>
 
@@ -106,13 +104,13 @@ export default function Contact() {
           <div className="lg:col-span-2 space-y-12">
             <div>
               <h3 className="text-3xl font-semibold text-gray-900 mb-8">
-                Let's Connect
+                Let&apos;s Connect
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                I'm always excited to discuss new opportunities, innovative
+                I&apos;m always excited to discuss new opportunities, innovative
                 projects, and creative collaborations. Whether you have a
                 specific project in mind or just want to explore possibilities,
-                I'd love to hear from you.
+                I&apos;d love to hear from you.
               </p>
             </div>
 
@@ -127,7 +125,7 @@ export default function Contact() {
                   </h4>
                   <p className="text-gray-600">klperera660@gmail.com</p>
                   <p className="text-sm text-gray-500">
-                    I'll respond within 48 hours
+                    I&apos;ll respond within 48 hours
                   </p>
                 </div>
               </div>
@@ -315,8 +313,8 @@ export default function Contact() {
                         Message sent successfully!
                       </h4>
                       <p className="text-sm">
-                        Thank you for reaching out. I'll get back to you within
-                        48 hours.
+                        Thank you for reaching out. I&apos;ll get back to you
+                        within 48 hours.
                       </p>
                     </div>
                   </div>
